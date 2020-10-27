@@ -34,9 +34,9 @@ The project has wrapped currency rates Apis provided by `Fixer.io` to create a m
   #### Request Parameters
   
   Parameter | Presence 
-  --- | --- | ---
-  base_currency| optional 
-  target_currency | optional
+  | --- | --- | ---
+  | base_currency| optional 
+  | target_currency | optional
 
 + **Historical Rates:**
 
