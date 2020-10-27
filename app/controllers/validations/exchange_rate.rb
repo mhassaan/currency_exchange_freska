@@ -2,7 +2,7 @@ module Validations
   class ExchangeRate
     include ActiveModel::Validations
     attr_reader :base_currency, :target_currency, :exchange_date
-    validates :base_currency, inclusion: { in: lambda { |f| f.allowed_base_currency }, message: "%{value} is not within our supported currency We currenlty support only ['EUR']" }
+    validates :base_currency, presence: true, inclusion: { in: lambda { |f| f.allowed_base_currency }, message: "%{value} is not within our supported currency We currenlty support only ['EUR']" }
     validates :target_currency, presence: true
     validate :date_format
 

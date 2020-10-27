@@ -10,7 +10,7 @@ class FixerApi
   end
 
   def latest
-    @options = { query: { access_key: Figaro.env.fixer_api_key } }
+    @options = { query: { access_key: Figaro.env.fixer_api_key, base: base_currency, symbols: target_currency } }
     Rails.cache.fetch(cache_key, :expires => 24.hours) do
       self.class.get("/latest", @options).to_hash
     end

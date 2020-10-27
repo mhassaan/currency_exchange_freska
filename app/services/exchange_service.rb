@@ -9,7 +9,7 @@ module ExchangeService
     end
 
     def latest
-      fixer = FixerApi.new
+      fixer = FixerApi.new({ base_currency: base_currency, target_currency: target_currency, exchange_date: exchange_date })
       fixer.latest
     end
 
