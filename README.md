@@ -33,8 +33,8 @@ The project has wrapped currency rates Apis provided by `Fixer.io` to create a m
   
   #### Request Parameters
   
-  Parameter | Presence 
-  | --- | --- | ---
+  | Parameter |Presence|
+  | --------- |-------|
   | base_currency| optional 
   | target_currency | optional
 
@@ -47,9 +47,9 @@ The project has wrapped currency rates Apis provided by `Fixer.io` to create a m
   
   #### Request Parameters
   
-  Parameter | Presence 
-  --- | --- | ---
-  base_currency| required 
-  target_currency | required
-  exchange_date | required
+  | Parameter | Presence|
+  | --------- | --------|
+  | base_currency |required 
+  | target_currency |required
+  | exchange_date |required
   
