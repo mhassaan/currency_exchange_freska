@@ -30,7 +30,9 @@ The project has wrapped currency rates Apis provided by `Fixer.io` to create a m
 
   #### HTTP Request
   `GET http://localhost:3000//exchange_rates/latest`
+  
   #### Request Parameters
+  
   Parameter | Presence 
   --- | --- | ---
   base_currency| optional 
@@ -42,7 +44,9 @@ The project has wrapped currency rates Apis provided by `Fixer.io` to create a m
 
   #### HTTP Request
   `GET http://localhost:3000//exchange_rates/historical`
+  
   #### Request Parameters
+  
   Parameter | Presence 
   --- | --- | ---
   base_currency| required 
